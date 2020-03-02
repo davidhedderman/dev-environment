@@ -1,0 +1,34 @@
+scripts_dir=$HOME/scripts
+
+# basic
+alias err='2>/dev/null'
+alias temp='cd /tmp'
+alias ips='ip addr | grep global'
+alias ip='ip addr | grep global | grep dynamic'
+
+# convenient
+alias vpn='cd ~/vpn && sudo openvpn david.hedderman.ovpn'
+alias morning="cd $scripts_dir && . ./morning.sh"
+alias hist="history > /tmp/its_history_now && vim /tmp/its_history_now"
+alias pdf="xdg-open"
+
+# searching
+alias ff.='find . -name $err '
+alias ff_='find / -name $err '
+alias g='grep -rnl $err '
+alias gs='grep -rnls $err '
+alias gl='grep -rn $err '
+alias gls='grep -rns $err '
+alias ge='grep -rnE $err '
+
+# django
+alias django_project='django-admin startproject'
+alias django_app='python manage.py startapp'
+alias django_server='python manage.py runserver'
+alias django_migrate='python manage.py migrate'
+alias django_mmigrate='python manage.py makemigrations'
+
+# svn
+alias sci='svn up && svn ci'
+alias sup='svn up'
+
